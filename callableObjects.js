@@ -1,6 +1,8 @@
-function myFunction( fullname ){
+function myFunction( myName   ) {
 
-    return console.log(fullname.firstname + " " + fullname.secondname);
+    return myName();
 }
 
-myFunction({firstname: 'hello', secondname: 'world'});
+//console.log(myFunction( functioin() { return  "hello world"; }))
+
+console.log(myFunction( function() { return "hello world"; } ));
