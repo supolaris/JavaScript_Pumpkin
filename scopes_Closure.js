@@ -10,7 +10,6 @@ var myKey = {
 
 
 function myClosureFunction() {
-    var myNum = 100;
 
     function myNestedFunction( myPramVal ) {
         var myNum2 = myPramVal + 20;
