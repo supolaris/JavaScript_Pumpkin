@@ -5,6 +5,7 @@ for(var i = 1; i<=10; i++){
         if(i<(10/2)){
             document.write(" * ");
         }
+        //document.write("<br>"); 
     }
 
     for(var k=10; k>i; k--){
@@ -12,6 +13,8 @@ for(var i = 1; i<=10; i++){
         if(i>(10/2)){
             document.write(" * ");
         }
+        //document.write("<br>"); 
     }
     document.write("<br>"); 
+    
 }
