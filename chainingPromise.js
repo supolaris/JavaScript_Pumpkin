@@ -15,12 +15,11 @@ function myPromise(handler){
     }
 };
 
-
-function myTwoSecond(){
+function myTwoSecond(myInput){
     return myPromise(function(resolve){
-        setTimeout(function(){console.log("Hello"), resolve(true)}, 2000);
+        setTimeout(function(){console.log(myInput), resolve(true)}, 2000);
     })
 }
 
 
-//myTwoSecond().then( () => {"Two Seconds Passed"});
+console.log(myTwoSecond("Hello").then(() => myTwoSecond("My world").then(() => myTwoSecond("iis fine"))));
