@@ -9,7 +9,14 @@ var myObj= {
     }
 }
 
+myObj.__proto__ = {
+    newfuntion(){
+        return "peter";
+    }
+}
+
 
 sample.__proto__ = myObj
 
 sample.myFunction();
+console.log(sample.newfuntion());
